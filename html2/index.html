@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Our beautiful commemoration</title>
+<link href="css/timeline.css" rel="stylesheet" type="text/css" />
+<script src="js/modernizr.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	
+	<iframe src="../loveyou/index.html" style="width:100%;height: 350px;"></iframe>
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="../images/cd-icon-picture.svg" alt="Picture">
+			</div><!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>第一次</h2>
+				<p>初见你的时候，你的样子看着十分憔悴，却让我很是心动，从那一刻起，便坚定陪你到老的决心。</p>
+				<a href="" class="cd-read-more">阅读更多</a>
+				<span class="cd-date">Oct 20</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="../images/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>第二次</h2>
+				<p>那是我去见你的时候，也是我第一次坐动车，很激动，去一个你存在的陌生的城市，不过，我很喜欢有你的雪天。</p>
+				<a href="" class="cd-read-more">阅读更多</a>
+				<span class="cd-date">Nov 17</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="../images/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>第三次</h2>
+				<p>这次是你来见我，我记得你昨天晚上庆祝很晚回家，我很担心，请你记得，无论你在哪，我都会陪着你，无论你在哪，总有至少一个人在思念着你。
+				这天我很激动，到西站去接你，然后带你去了回民街，看得出来，两人都很累，最后再坐车回到你未来的家的城市。💗</p>
+				<a href="" class="cd-read-more">阅读更多</a>
+				<span class="cd-date">Dec 21</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="../images/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			
+
+    <script>
+$(function(){
+	var $timeline_block = $('.cd-timeline-block');
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		}
+	});
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>
+<div style="display:none">
+	<script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6f798e51a1cd93937ee8293eece39b1a' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5718743'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/stat.php%3Fid%3D5718743%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+
